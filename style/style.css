@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(16, 4, 48));
+}
+
+.timer__item {
+    font-size: 20px;
+    text-align: center;
+    border: solid 2px red;
+    border-radius: 30px;
+    text-shadow: 0px 5px 10px red;
+
+}
+
+
+.timer__days {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 150px;
+    height: 270px;
+    border-radius: 100px 100px 0 0;
+    background-color: rgb(255, 4, 4);
+    box-shadow: 0px 0px 40px 15px red;
+    z-index: 1;
+    border: solid 2px red;
+    animation: days 5s forwards;
+    color: white;
+
+}
+
+
+.timer__days:before {
+    position: absolute;
+    width: 270px;
+    height: 130px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    box-shadow: 0px 3px 3px #444444;
+    border-radius: 0 100px 100px 0;
+    background-color: red;
+    box-shadow: 15px 15px 40px 20px red;
+    z-index: -1;
+    border: solid 2px red;
+    animation: 2s infinite;
+
+}
+
+
+@keyframes days {
+    0% {}
+
+    100% {
+        top: 25%;
+        right: 80%;
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+        transform: rotate(315deg);
+        font-size: 100px;
+
+    }
+}
+
+.timer__hours {
+    position: absolute;
+    width: 15%;
+    top: 0x;
+    left: 0px;
+    animation: hours 2s forwards;
+}
+
+@keyframes hours {
+    0% {}
+
+    100% {
+
+
+        filter: drop-shadow(16px 16px 20px rgb(255, 8, 0)) invert(75%);
+        transform: rotate(360deg);
+        top: 35%;
+        left: 32%;
+        font-size: 100px;
+
+    }
+}
+
+.timer__minutes {
+    position: absolute;
+    width: 5%;
+    bottom: 0100px;
+    left: 40%;
+    animation: minutes 2s forwards;
+}
+
+@keyframes minutes {
+    0% {}
+
+    100% {
+        width: 18%;
+        filter: drop-shadow(16px 16px 20px rgb(255, 8, 0)) invert(75%);
+        transform: rotate(360deg);
+        bottom: 46.3%;
+        left: 50%;
+        font-size: 100px;
+    }
+}
+
+.timer__seconds {
+    position: absolute;
+    width: 2%;
+    bottom: 5%;
+    right: 5%;
+    animation: seconds 4s forwards;
+}
+
+@keyframes seconds {
+    0% {}
+
+    100% {
+        font-size: 100px;
+
+        filter: drop-shadow(16px 16px 20px rgb(255, 8, 0))invert(75%);
+        width: 18%;
+        transform: rotate(360deg);
+        bottom: 35.3%;
+        right: 11%;
+    }
+}
+
+.timer__total {
+    position: absolute;
+    font-size: 40px;
+    width: 10%;
+    text-align: center;
+    left: 0;
+    top: 450px;
+    animation: total 5s forwards;
+}
+
+@keyframes total {
+    0% {}
+
+    100% {
+        font-size: 100px;
+        width: 25%;
+        filter: drop-shadow(16px 16px 20px rgb(255, 8, 0)) invert(75%);
+        transform: rotate(360deg);
+        top: 70%;
+        left: 65%;
+        font-size: 100px;
+    }
+}
+
+.box {
+    display: flex;
+    left: 0;
+    font-size: 40px;
+}
+
+p {
+    box-shadow: 0px 0px 20px 5px red;
+    font-family: 'Shadows Into Light', cursive;
+    border-radius: 30px;
+    text-shadow: 0px 5px 10px red;
+}
+
+.text1 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    animation: text1 1s forwards;
+    font-weight: 900;
+    width: 6%;
+}
+
+@keyframes text1 {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+        top: 70%;
+        left: 10%;
+        font-size: 150px;
+    }
+}
+
+.text2 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    animation: text2 2s forwards;
+    font-weight: 900;
+
+
+}
+
+@keyframes text2 {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+        top: 70%;
+        left: 17%;
+        font-size: 150px;
+    }
+}
+
+.text3 {
+    position: absolute;
+    color: white;
+    left: 5%;
+    top: 5%;
+    animation: text3 3s forwards;
+
+}
+
+@keyframes text3 {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+        top: 70%;
+        left: 22%;
+        font-size: 150px;
+    }
+}
+
+.text4 {
+    position: absolute;
+    color: white;
+
+    left: 5%;
+    top: 5%;
+    animation: text4 4s forwards;
+
+}
+
+@keyframes text4 {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+        top: 70%;
+        left: 28%;
+        font-size: 150px;
+    }
+}
+
+.text5 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    animation: text5 5s forwards;
+    font-weight: 900;
+
+}
+
+@keyframes text5 {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+        top: 70%;
+        left: 32%;
+        font-size: 150px;
+    }
+}
